@@ -35,7 +35,7 @@ const BookList = () => {
         ...filters
       });
 
-      const response = await fetch(`/api/books?${params}`);
+      const response = await fetch(`https://book-explorer-app-60az.onrender.com/api/books?${params}`);
       
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
